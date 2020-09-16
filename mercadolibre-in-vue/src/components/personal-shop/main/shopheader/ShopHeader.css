@@ -1,0 +1,12 @@
+.v-toolbar__content {
+    background-color: #FBF159;
+    color: #3B3815;
+}
+.v-icon notranslate mdi mdi-heart theme--dark::after {
+    fill: #3B3815;
+}
+.titulo {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
