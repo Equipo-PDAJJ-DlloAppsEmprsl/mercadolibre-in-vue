@@ -9,4 +9,17 @@
     display: flex;
     flex-direction: row;
     text-align: center;
+    font-family: "Proxima Nova",-apple-system,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-weight: bold;
+}
+.ml-logo {
+    width: 100px !important;
+}
+
+.spacer {
+    flex: 2 1 auto;
+}
+
+.aniversario {
+    width: 400px;
 }
