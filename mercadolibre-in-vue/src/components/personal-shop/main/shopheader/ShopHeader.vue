@@ -6,6 +6,14 @@
       </div>
       <v-toolbar-title class="titulo">Gallito Shop</v-toolbar-title>
       <v-spacer></v-spacer>
+     <v-text-field
+        class="mx-4"
+        flat
+        hide-details
+        append-icon="search"
+        solo-inverted
+      ></v-text-field>
+
       <div>
         <v-img class="aniversario" :src="require('@/assets/aniversario.png')" />
       </div>
