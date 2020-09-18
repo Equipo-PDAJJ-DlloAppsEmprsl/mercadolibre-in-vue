@@ -6,7 +6,8 @@ const product: Product = {
     name: "la cripa rosada",
     price: 70000,
     reseller: "El jivaro",
-    review: "una chimba"
+    review: "una chimba",
+    photo: ""
 }
 
 export default Vue.extend({

@@ -4,4 +4,5 @@ export interface Product {
     reseller: string;
     discount: number;
     review: string;
+    photo: string;
 }
