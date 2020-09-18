@@ -13,7 +13,7 @@
         append-icon="search"
         solo-inverted
       ></v-text-field>
-
+      <v-spacer></v-spacer>
       <div>
         <v-img class="aniversario" :src="require('@/assets/aniversario.png')" />
       </div>
@@ -26,12 +26,7 @@
     </v-sheet>
   </v-card>
 </template>
-<script>
-import Vue from "vue";
-
-export default Vue.extend({
-  name: "ShopHeader"
-});
+<script src="./ShopHeader.ts">
 </script>
 <style scoped>
 @import "./ShopHeader.css";
