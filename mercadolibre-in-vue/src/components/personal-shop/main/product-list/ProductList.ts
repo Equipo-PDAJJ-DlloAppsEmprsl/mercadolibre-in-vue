@@ -5,5 +5,10 @@ export default Vue.extend({
     name: "ProductList",
     data: () => ({
         items: PRODUCTLIST
-    })
+    }),
+    methods: {
+        itemSelection: function(event: any) {
+            console.log(event)
+        }
+    }
 })

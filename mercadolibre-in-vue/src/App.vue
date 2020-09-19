@@ -1,22 +1,22 @@
 <template>
   <v-app>
     <v-main>
-      <ShopHeader />
-      <ProductList/>
+      <ProductList></ProductList>
+      <Main></Main>
     </v-main>
   </v-app>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import ShopHeader from "./components/personal-shop/main/shopheader/ShopHeader.vue";
-import ProductList from "./components/personal-shop/main/product-list/ProductList.vue";
+import Main from "./components/personal-shop/main/Main.vue";
+import ProductList from "./components/personal-shop/main/shopheader/ShopHeader.vue";
 
 export default Vue.extend({
   name: "App",
 
   components: {
-    ShopHeader,
+    Main,
     ProductList
   },
 

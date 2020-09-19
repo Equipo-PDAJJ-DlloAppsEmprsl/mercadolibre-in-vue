@@ -2,11 +2,11 @@ import {Product} from '../../../model/Product';
 
 export const PRODUCTLIST: Product[] = [{
         discount: 0,
-        name: "Comida típica Árabe",
+        name: "Estatua del Diablo",
         price: 70000,
         reseller: "Alahu ak Sahbar",
         review: "melo",
-        photo: "https://placeralplato.com/files/2016/05/Falafel-640x480.jpg?width=1200&enable=upscale"
+        photo: "https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzLzQ2YTFhNjUxNzg0ZGFlNDRkZF9Ib2xlIDIuanBnIl0sWyJwIiwiY29udmVydCIsIiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXSxbInAiLCJ0aHVtYiIsIjc4MHg1MjAjIl1d/Hole%202.jpg"
     },
     {
         discount: 0.12,

@@ -9,8 +9,8 @@
           :key="i"
           :cols="3"
           >
-          <v-card dark>
-              <v-img :src="item.photo" height="200px">
+          <v-card dark @click="itemSelection">
+              <v-img :src="item.photo" height="200px" >
                 <v-card-title v-text="item.price"></v-card-title>
               </v-img>
               <div>
