@@ -8,25 +8,15 @@ export default Vue.extend({
         searchCriteria: ""
     }),
     methods: {
-        searchItem: function(searchText: string) {
-            const service: MercadoLibreService = new MercadoLibreService();
-            
-             service.getItems(searchText, 30).then(
-                 response=>{
-                     (console.log(response))
-                     this.parseResponse(response.data.results)
-                    }
-             )
-            },
         searchItems: function()  {
-            console.log(this.searchCriteria)
-            
-            this.searchItem(this.searchCriteria)
+            this.$router.push({
+                name: 'products',
+                params: {criteria: this.searchCriteria, offset:"0"}
+            })
         },
         parseResponse: function(data: any[]) {
-            const newArray: Product[] = [];
             data.forEach(element => {
-                newArray.push({
+                store.items.push({
                     price: element.price,
                     name: element.title,
                     reseller: element.seller.id,
@@ -35,7 +25,6 @@ export default Vue.extend({
                     photo: element.thumbnail
                 })
             });
-            store.items = newArray;
             console.log(store.items);
         }
     },

@@ -7,6 +7,7 @@
       <v-row dense>
         <v-col
           v-for="(item, i) in items"
+          v-bind="item"
           :key="i"
           :cols="3"
           >
@@ -22,7 +23,11 @@
       </v-row>
     </v-container>
   </v-card>
+  <v-container v-if="items.length==0">
+  <h1>No match results</h1>
+</v-container>
 </div>
+
     
 </template>
 <script lang="ts" src="./ProductList.ts">

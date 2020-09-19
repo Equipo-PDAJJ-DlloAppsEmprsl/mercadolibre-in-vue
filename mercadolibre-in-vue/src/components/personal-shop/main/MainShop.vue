@@ -1,7 +1,6 @@
 <template>
 
 <div clas="product-list-container">
-    <ProductList></ProductList>
 </div>
 
 </template>

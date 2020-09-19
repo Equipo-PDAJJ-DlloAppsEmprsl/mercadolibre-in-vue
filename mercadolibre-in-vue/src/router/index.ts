@@ -10,8 +10,13 @@ const routes: Array<RouteConfig> = [
     component: require("@/components/personal-shop/main/MainShop.vue").default
   },
   {
-    path: "/detail",
-    name: "detail/:id",
+    path: "/products/:criteria/:offset",
+    name: "products",
+    component: require("@/components/personal-shop/main/product-list/ProductList.vue").default
+  },
+  {
+    path: "/detail/:id",
+    name: "detail",
     component: require("@/components/personal-shop/product-detail/ProductDetail.vue").default
   }
 ];
