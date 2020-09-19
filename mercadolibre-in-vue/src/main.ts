@@ -5,21 +5,10 @@ import store from "./store";
 import vuetify from "./plugins/vuetify";
 import 'material-design-icons-iconfont/dist/material-design-icons.css';
 import VueRouter from 'vue-router';
+import MainShop from './components/personal-shop/main/MainShop';
+import ProductDetail from './components/personal-shop/product-detail/ProductDetail';
 
 Vue.use(VueRouter);
-
-const routes = [
-  {
-    path: "/",
-    name: "Main"
-  },
-  {
-    path: "/", 
-    name: "Detail/:id"
-  }
-]
-
- 
 
 Vue.config.productionTip = false;
 

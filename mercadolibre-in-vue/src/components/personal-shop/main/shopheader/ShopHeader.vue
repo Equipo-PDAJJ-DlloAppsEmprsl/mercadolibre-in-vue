@@ -12,6 +12,9 @@
         hide-details
         append-icon="search"
         solo-inverted
+        v-model="searchCriteria"
+        v-on:keyup.enter="searchItems"
+        
       ></v-text-field>
       <v-spacer></v-spacer>
       <div>

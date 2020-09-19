@@ -1,14 +1,22 @@
 import Vue from 'vue'
-import {PRODUCTLIST} from '../../../../shared/helpers/__mock___/Products.mock';
+import {store} from '@/store/store';
 
 export default Vue.extend({
     name: "ProductList",
     data: () => ({
-        items: PRODUCTLIST
+        items: store.items
     }),
     methods: {
         itemSelection: function(event: any) {
             console.log(event)
-        }
+            this.$router.push({
+                name: "detail",
+                params: { id: "xx" },
+              });
+        },
+    }, created(){
+        //this.searchItem("carro")
+    },
+    watch: {
     }
 })

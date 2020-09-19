@@ -1,5 +1,6 @@
 <template>
-    <v-card
+<div class="product-list-cont">
+<v-card v-if="items.length>0"
         max-width="1000px"
         class="mx-auto">
     <v-container fluid>
@@ -21,6 +22,8 @@
       </v-row>
     </v-container>
   </v-card>
+</div>
+    
 </template>
 <script lang="ts" src="./ProductList.ts">
 </script>
